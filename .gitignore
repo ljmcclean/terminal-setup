@@ -1,0 +1,13 @@
+/*
+
+!.gitignore
+
+!.bash_aliases
+!.bashrc
+!.inputrc
+!.tmux.conf
+!.symbols.txt
+
+!.config
+.config/*
+!.config/nvim
