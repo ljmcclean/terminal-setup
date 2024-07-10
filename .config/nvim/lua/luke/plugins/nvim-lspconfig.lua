@@ -72,6 +72,7 @@ return {
         },
       },
       pyright = {},
+      marksman = {},
     }
 
     require('mason').setup()

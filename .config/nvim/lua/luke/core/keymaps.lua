@@ -9,7 +9,11 @@ vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left wind
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+vim.keymap.set('n', '<leader>h', '<cmd>split<CR>', { desc = 'Split window [H]orizontally' })
+vim.keymap.set('n', '<leader>v', '<cmd>vsplit<CR>', { desc = 'Split window [V]ertically' })
 
+vim.keymap.set('n', '<leader>e', '<cmd>Explore<CR>')
+vim.keymap.set('n', '<leader>q', '<cmd>wq<CR>')
 vim.keymap.set('n', '<leader>n', '<cmd>bnext<CR>')
 vim.keymap.set('n', '<leader>p', '<cmd>bprevious<CR>')
 vim.keymap.set('n', '<leader>d', '<cmd>bdelete<CR>')
