@@ -31,6 +31,8 @@ gt: git tag
 ginit: init new remote repo
 =============================='"
 
+alias wgot="wgo -file=.go -file=.templ -xfile=_templ.go templ generate :: go run main.go"
+
 function ginit {
   if [ -z "$1" ]; then
     echo "remote origin required"
@@ -43,4 +45,12 @@ function ginit {
     git tag v0.0.0
     git push -u origin main
   fi
+}
+
+function templive {
+  PORT=8080
+  if ! [ -z "$1" ]; then
+    PORT=$1
+  fi
+  templ generate --watch --proxy="http://localhost:$PORT" --cmd="go run ."
 }
