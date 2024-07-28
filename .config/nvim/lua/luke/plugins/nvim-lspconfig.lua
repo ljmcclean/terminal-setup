@@ -73,6 +73,9 @@ return {
       },
       pyright = {},
       marksman = {},
+      html = {},
+      cssls = {},
+      templ = {},
     }
 
     require('mason').setup()
